@@ -6,6 +6,17 @@
   <meta name="description" content="CatCo News — portal jornalístico independente de National City." />
   <title>CatCo News | Jornalismo em tempo real</title>
   <link rel="icon" type="image/png" href="imgs/catcoiconpng.png">
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('catco-theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -19,6 +30,10 @@
           <a href="#ao-vivo">Ao vivo</a>
           <a href="#newsletter">Newsletter</a>
           <a href="#expediente">Expediente</a>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+            <span class="theme-toggle-label">Tema escuro</span>
+          </button>
         </div>
       </div>
     </section>
@@ -32,7 +47,7 @@
       </button>
 
      <a class="brand" href="#top" aria-label="CatCo News página inicial">
-        <img class="brand-wordmark" src="imgs/catco.png" alt="CatCo Worldwide Media" />
+        <img class="brand-wordmark" src="imgs/catco.png" data-light-src="imgs/catco.png" data-dark-src="imgs/catco-footer.png" alt="CatCo Worldwide Media" />
      </a>
 
       <a class="subscribe-button" href="#newsletter">Assinar</a>
