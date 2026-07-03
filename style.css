@@ -454,7 +454,7 @@ input {
 
 .image-placeholder::after {
   color: rgba(255, 255, 255, 0.8);
-  content: "CATCO PHOTO DESK";
+  content: "";
   font-size: 0.72rem;
   font-weight: 950;
   inset: auto 16px 14px auto;
@@ -464,20 +464,26 @@ input {
 
 .image-placeholder.politics {
   background:
-    linear-gradient(135deg, rgba(0, 0, 0, 0.18), rgba(201, 25, 31, 0.88)),
-    linear-gradient(90deg, #2d2d2d, #5a4b3a);
+    linear-gradient(135deg, rgba(0, 0, 0, 0.18), rgba(201, 25, 31, 0.38)),
+    url("imgs/lab.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .image-placeholder.city {
   background:
-    linear-gradient(135deg, rgba(5, 5, 5, 0.64), rgba(180, 138, 60, 0.78)),
-    linear-gradient(90deg, #333, #777);
+    linear-gradient(135deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.1)),
+    url("imgs/avenida.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .image-placeholder.culture {
   background:
-    linear-gradient(135deg, rgba(201, 25, 31, 0.86), rgba(180, 138, 60, 0.76)),
-    linear-gradient(90deg, #222, #777);
+    linear-gradient(135deg, rgba(0, 0, 0, 0.18), rgba(180, 138, 60, 0.35)),
+    url("imgs/livraria.png");
+  background-size: cover;
+  background-position: center;
 }
 
 .city-layout,
