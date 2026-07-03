@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reportagem CatCo Worldwide Media — National City." />
+  <title>Sem transparência, tecnologia vira instrumento de poder | CatCo News</title>
+  <link rel="icon" type="image/png" href="../imgs/catcoiconpng.png">
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem('catco-theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (error) {}
+    })();
+  </script>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <section class="utility-bar" aria-label="Informações do portal">
+      <div class="utility-inner">
+        <p id="today">National City</p>
+        <div class="utility-links" aria-label="Links rápidos">
+          <a href="../index.html#ao-vivo">Ao vivo</a>
+          <a href="../index.html#newsletter">Newsletter</a>
+          <a href="../index.html#expediente">Expediente</a>
+          <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">
+            <span class="theme-toggle-icon" aria-hidden="true"></span>
+            <span class="theme-toggle-label">Tema escuro</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="masthead" aria-label="Cabeçalho principal">
+      <button class="menu-button" id="menuButton" type="button" aria-expanded="false" aria-controls="mainNav">
+        <span></span>
+        <span></span>
+        <span></span>
+        Menu
+      </button>
+
+      <a class="brand" href="../index.html" aria-label="CatCo News página inicial">
+        <img class="brand-wordmark" src="../imgs/catco.png" data-light-src="../imgs/catco.png" data-dark-src="../imgs/catco-footer.png" alt="CatCo Worldwide Media" />
+      </a>
+
+      <a class="subscribe-button" href="../index.html#newsletter">Assinar</a>
+    </section>
+
+    <nav class="main-nav" id="mainNav" aria-label="Editorias">
+      <a href="../index.html#ultimas">Últimas</a>
+      <a href="../index.html#politica">Política</a>
+      <a href="../index.html#cidade">National City</a>
+      <a href="../index.html#tecnologia">Tecnologia</a>
+      <a href="../index.html#mundo">Mundo</a>
+      <a href="../index.html#cultura">Cultura</a>
+      <a href="../index.html#opiniao">Opinião</a>
+      <a href="../index.html#investigacao">Investigação</a>
+    </nav>
+  </header>
+
+
+  <main id="conteudo" class="article-page">
+    <article class="article-main">
+      <a class="back-link" href="../index.html#investigacao">← Voltar para a capa da CatCo</a>
+      <p class="kicker">Opinião</p>
+      <h1>Sem transparência, tecnologia vira instrumento de poder</h1>
+      <p class="article-subhead">Quando a infraestrutura de uma cidade depende de sistemas privados, respostas vagas deixam de ser aceitáveis.</p>
+      <div class="article-meta">
+        <span>Por Iris West</span>
+        <span>Coluna — Opinião</span>
+      </div>
+      <div class="article-body">
+        <p>National City gosta de se vender como uma cidade do futuro. O problema é que futuro sem transparência vira apenas uma palavra bonita para justificar decisões tomadas longe do público.</p>
+        <p>O apagão de domingo e as falhas que vieram depois dele expuseram algo que muitos preferiam tratar como detalhe técnico: a infraestrutura da cidade depende de sistemas que a maioria dos moradores não entende, não fiscaliza e, muitas vezes, sequer sabe que existem.</p>
+        <p>Isso não significa demonizar empresas privadas. A LuthorCorp, como outras companhias de tecnologia, tem papel relevante na modernização urbana. Mas relevância não pode ser confundida com imunidade. Quanto maior o impacto de uma empresa na vida pública, maior deve ser sua obrigação de explicar o que faz, como faz e o que acontece quando falha.</p>
+        <p>Transparência não é inimiga da inovação. Pelo contrário: é o que impede que inovação se transforme em concentração de poder. Uma cidade que automatiza serviços, integra dados e digitaliza decisões precisa de auditoria, linguagem clara e canais de prestação de contas.</p>
+        <p>O jornalismo existe justamente para ocupar esse espaço entre o comunicado oficial e a verdade pública. A pergunta não é se National City deve avançar tecnologicamente. Deve. A pergunta é quem acompanha esse avanço, quem se beneficia dele e quem paga a conta quando algo dá errado.</p>
+        <p>Se a resposta vier apenas das empresas, ela será incompleta. Se vier apenas do governo, será insuficiente. A cidade precisa de ambos — e precisa, acima de tudo, de uma imprensa disposta a continuar perguntando.</p>
+      </div>
+    </article>
+
+      <aside class="article-aside">
+        <h2>Leia também</h2>
+        <a href="apagao-national-city.html">Apagão expõe dependência tecnológica de National City</a>
+<a href="perfil-leticia-luthor.html">Letícia Luthor e o custo público da precisão</a>
+      </aside>
+  </main>
+
+  <footer class="site-footer" id="expediente">
+    <div class="footer-brand">
+      <img class="footer-logo" src="../imgs/catco-footer.png" alt="CatCo Worldwide Media" />
+      <p class="footer-tagline">Jornalismo em tempo real para National City e além.</p>
+    </div>
+
+    <div class="footer-columns">
+      <div>
+        <h3>Redação</h3>
+        <a href="mailto:redacao@catcoworldwide.com">redacao@catcoworldwide.com</a>
+        <a href="mailto:denuncias@catcoworldwide.com">denuncias@catcoworldwide.com</a>
+      </div>
+      <div>
+        <h3>Institucional</h3>
+        <a href="../index.html#expediente">Expediente</a>
+        <a href="../index.html#newsletter">Newsletter</a>
+        <a href="../index.html#investigacao">Investigações</a>
+      </div>
+      <div>
+        <h3>Editorias</h3>
+        <a href="../index.html#politica">Política</a>
+        <a href="../index.html#tecnologia">Tecnologia</a>
+        <a href="../index.html#cultura">Cultura</a>
+      </div>
+    </div>
+
+    <p class="copyright">© 2034 CatCo Worldwide Media. Portal fictício para universo alternativo.</p>
+  </footer>
+
+  <script src="../script.js" defer></script>
+</body>
+</html>
